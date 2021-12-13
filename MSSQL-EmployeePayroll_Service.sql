@@ -11,3 +11,8 @@ select * from employee_Payrolll
 SELECT name,salary from employee_Payrolll WHERE name = 'BILLL'
 select * from employee_Payrolll
 WHERE start BETWEEN CAST('2021-01-03' AS DATE) AND GETDATE();
+ALTER TABLE employee_Payrolll ADD gender CHAR(1);
+update employee_Payrolll set gender = 'F' where name = 'Terisaa';
+update employee_Payrolll set gender = 'M' where name = 'BILLL' or name = 'Charliee';
+update employee_Payrolll set salary = 900000.00 where name = 'Terisaa';
+select * from employee_Payrolll
