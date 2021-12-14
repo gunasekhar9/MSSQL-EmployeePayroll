@@ -40,3 +40,12 @@ SELECT MIN(salary) FROM employee_Payrolll WHERE gender = 'M' GROUP BY gender;
 SELECT MIN(salary) FROM employee_Payrolll WHERE gender = 'F' GROUP BY gender;
 SELECT MAX(salary) FROM employee_Payrolll WHERE gender = 'M' GROUP BY gender;
 SELECT MAX(salary) FROM employee_Payrolll WHERE gender = 'F' GROUP BY gender;
+
+
+ALTER TABLE employee_Payrolll Add Department char(10);
+ALTER TABLE employee_Payrolll Add Phonenumber int;
+ALTER TABLE employee_Payrolll Add Address char(10);
+update employee_Payrolll set Department = 'FINANCE' where name = 'BILLL';
+update employee_Payrolll set Department = 'MARKETING' where name = 'Terisaa';
+update employee_Payrolll set Department = 'PRODUCTION' where name = 'Charliee';
+select * from employee_Payrolll
